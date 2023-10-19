@@ -8,4 +8,4 @@
 # --exclude-standard: Ignora los archivos estándar
 # sed: Comando para filtrar y transformar textos
 
-git ls-files --others --ignored --exclude-standard | sed 's/$/-$/'
+git ls-files --others --ignored --exclude-standard

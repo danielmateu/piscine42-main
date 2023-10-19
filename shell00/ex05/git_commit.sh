@@ -6,4 +6,4 @@
 # -n -> muestra los ultimos n commits
 # --pretty=format:"%H" -> muestra el hash de cada commit
 
-git log -n 5 --pretty=format:"%H$"
+git log --format="%H" -n 5
