@@ -1,0 +1,10 @@
+#Script que contenga el comando que hay que ejecutar para listar los archivos y los directorios del directorio actual, pero no los archivos ocultos, ni "."ni ".."(nada que empiece con un punto), separados por una coma y un espacio, ordenados por fecha de modificación y de tal modo que los directorios vayan seguidos por el carácter slash ("/")
+
+#!/bin/sh
+
+# ls -> listar archivos y directorios
+# -t -> ordenar por fecha de modificación
+# -p -> añadir "/" al final de los directorios
+# -m -> separar por comas
+
+ls -t -p -m
