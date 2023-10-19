@@ -1,37 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   scope.c                                            :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: damateu- <damateu-@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/19 14:55:19 by damateu-              #+#    #+#             */
-/*   Updated: 2023/10/19 14:55:21 by damateu-             ###   ########.fr       */
+/*   Created: 2023/10/19 16:11:15 by damateu-              #+#    #+#             */
+/*   Updated: 2023/10/19 16:11:15 by damateu-             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// Purpose: Illustrate scope of variables.
+/*
+Escribe una funcion que muestre el caracter usado como parámetro
 
-#include <stdio.h>
+el prototipo de la funcion es el siguiente:
 
-int function_1(int a, int b) {
-    int variable_3;
-    
-    variable_3 = a + b;
-    // imprimir el resultado    
-    return variable_3;
+void ft_putchar(char c);
+
+Para mostrar el carácter, debes usar la función write de la siguiente manera:
+
+write(1, &c, 1);
+*/
+
+
+#include <unistd.h>
+
+void ft_putchar(char c) {
+    write(1, &c, 1);
 }
 
 int main(void) {
-
-    int a;
-    int b;
-
-    b = 8;
-    a = function_1(b, 2);
-
-    // imprimir el resultado
-    printf("variable_3 = %d\n", a);
-
+    ft_putchar('h');
     return 0;
 }
+
+
+
+
