@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:11:15 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/19 18:07:00 by user             ###   ########.fr       */
+/*   Updated: 2023/10/20 10:16:57 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	ft_putchar(char c)
 {
-    write(1, &c, 1);
+	write(1, &c, 1);
 }
 
-int	main(void)
+int main(void)
 {
-    ft_putchar('a');
-    return (0);
+	ft_putchar('a');
+	return (0);
 }
