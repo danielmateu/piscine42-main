@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 23:10:35 by user              #+#    #+#             */
-/*   Updated: 2023/10/21 23:23:47 by user             ###   ########.fr       */
+/*   Updated: 2023/10/21 23:25:11 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,10 +62,10 @@ void	ft_print_comb2(void)
     while_conditions(a, b, c, d);
 }
 
-int	main(void)
+// int	main(void)
 
-{
-    ft_print_comb2();
-    return (0);
+// {
+//     ft_print_comb2();
+//     return (0);
 
-}
+// }
