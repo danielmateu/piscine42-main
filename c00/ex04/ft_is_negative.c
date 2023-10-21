@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 00:20:46 by user              #+#    #+#             */
-/*   Updated: 2023/10/20 00:25:20 by user             ###   ########.fr       */
+/*   Updated: 2023/10/21 20:02:00 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ void	ft_is_negative(int n)
     }
 }
 
-int	main(void)
-{
-    ft_is_negative(-10);
-    return (0);
-}
+// int	main(void)
+// {
+//     ft_is_negative(-10);
+//     return (0);
+// }
