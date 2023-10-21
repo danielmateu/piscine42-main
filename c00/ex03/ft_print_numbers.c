@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: damateu- <damateu-@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: damateu- <damateu-@student.42.fr>                  +#+  +:+       +#+*/
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 00:08:04 by damateu-              #+#    #+#             */
 /*   Updated: 2023/10/20 00:08:04 by damateu-             ###   ########.fr       */

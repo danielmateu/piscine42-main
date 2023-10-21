@@ -1,37 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/19 18:23:45 by user              #+#    #+#             */
-/*   Updated: 2023/10/21 22:13:59 by user             ###   ########.fr       */
+/*   Created: 2023/10/21 22:31:55 by user              #+#    #+#             */
+/*   Updated: 2023/10/21 23:04:17 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-// Escribe una función que muestre el alfabeto en minúsculas en una sola línea, en
-// orden creciente, empezando en la letra “a”.
-
-void    ft_print_alphabet(void)
+void	ft_print_comb(void)
 {
-        char    c;
-        int             i;
+	char	a;
+	char	b;
+	char	c;
 
-        c = 'a';
-        i = 0;
-        while (i < 26)
-        {
-                write(1, &c, 1);
-                c++;
-                i++;
-        }
+	a = '0' - 1;
+	while (++a <= '9')
+	{
+		b = a;
+		while (++b <= '9')
+		{
+			c = b;
+			while (++c <= '9')
+			{
+				write(1, &a, 1);
+				write(1, &b, 1);
+				write(1, &c, 1);
+				if (!(a == '7' && b == '8' && c == '9'))
+					write(1, ", ", 2);
+			}
+		}
+	}
 }
 
-// int main(void)
+// int	main(void)
 // {
-//     ft_print_alphabet();
-//     return (0);
+//         ft_print_comb();
+//         return (0);
 // }
