@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 23:10:35 by user              #+#    #+#             */
-/*   Updated: 2023/10/21 23:26:52 by user             ###   ########.fr       */
+/*   Updated: 2023/10/22 15:04:40 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,9 @@ void	while_conditions(char a, char b, char c, char d)
 	}
 }
 
+/**
+ * The function ft_print_comb2 prints all possible combinations of two digits.
+ */
 void	ft_print_comb2(void)
 {
 	char	a;
