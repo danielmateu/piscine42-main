@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 16:11:15 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/20 10:16:57 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/10/23 09:37:09 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-int main(void)
-{
-	ft_putchar('a');
-	return (0);
-}
+// int main(void)
+// {
+// 	ft_putchar('a');
+// 	return (0);
+// }

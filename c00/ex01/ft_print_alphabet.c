@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 18:23:45 by user              #+#    #+#             */
-/*   Updated: 2023/10/20 10:51:31 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/10/23 09:37:22 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ void ft_print_alphabet(void)
     }
 }
 
-int main(void)
-{
-    ft_print_alphabet();
-    return (0);
-}
+// int main(void)
+// {
+//     ft_print_alphabet();
+//     return (0);
+// }
