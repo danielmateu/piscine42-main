@@ -5,4 +5,4 @@
 
 # Para correr la Mini Moulinette
 
-Ir al directorio donde queremos realizar el test, ex C00 y correr mini C00, para el directorio C00
+Ir al directorio donde queremos realizar el test, ex C00 y correr mini C00, para el directorio C00.
