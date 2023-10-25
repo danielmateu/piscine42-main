@@ -6,16 +6,15 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 12:03:02 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/25 12:08:03 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/10/25 12:12:28 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
 int main(){
-    int x = 'a';
-    while(x <= 'z'){
-        write(1, &x, 1);
-        x++;
-    }
+    int x = '1';
+
+    write(1, %x, 1);
+    write(1, &x, 1);
 }

@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 14:28:48 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/24 14:47:22 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/10/25 12:18:30 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,11 @@ void ft_putstr(char *str)
     }
 }
 
-// int main(void)
-// {
-//     char *str;
+int main(void)
+{
+    char *str;
 
-//     str = "Hola mundo";
-//     ft_putstr(str);
-//     return (0);
-// }
+    str = "Hola mundo";
+    ft_putstr(str);
+    return (0);
+}
