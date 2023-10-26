@@ -37,7 +37,10 @@ char	*ft_strcapitalize(char *str)
 				str[i] = str[i] - 32;
 			}
 
-
+			/* The condition `if (str[i - 1] >= ' ' && str[i - 1] <= '/')` checks if the character before the
+			current character `str[i]` is a space or a punctuation mark. If it is, then it means that the
+			current character `str[i]` is the first character of a new word, so it should be capitalized.
+			Therefore, the code `str[i] = str[i] - 32;` converts the lowercase letter to uppercase. */
 			if (str[i - 1] >= ' ' && str[i - 1] <= '/')
 			{
 				str[i] = str[i] - 32;
