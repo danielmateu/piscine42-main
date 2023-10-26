@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/26 10:39:26 by damateu-          #+#    #+#             */
+/*   Updated: 2023/10/26 10:39:27 by damateu-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 
 
 // Crea una funcion que devuelva 1 si el string usado como parámetro contiene unicamente caracteres alfabéticos y 0 si contiene otro tipo de caracteres.
