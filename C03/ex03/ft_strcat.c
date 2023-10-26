@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 00:07:06 by user              #+#    #+#             */
-/*   Updated: 2023/10/27 00:10:00 by user             ###   ########.fr       */
+/*   Updated: 2023/10/27 00:12:10 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,15 @@ char    *ft_strcat(char *dest, char *src)
         return (dest);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main(void)
-{
-        char dest[100] = "Hello";
-        char src[100] = "World";
-        printf("%s\n", ft_strcat(dest, src));
-        return (0);
-}
+// int main(void)
+// {
+//         char dest[100] = "Hello";
+//         char src[100] = "World";
+//         printf("%s\n", ft_strcat(dest, src));
+//         return (0);
+// }
 
 
 
