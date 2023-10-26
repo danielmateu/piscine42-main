@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 12:24:02 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/26 12:29:45 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/10/26 12:41:26 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,18 @@ int ft_str_is_lowercase(char *str)
     {
         if(str[i] < 'a' || str[i] > 'z')
         {
-            return (0)
+            return (0);
         }
         i++;
     }
     return (1);
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+    char str[] = "holaA";
+    printf("%d", ft_str_is_lowercase(str));
+    return (0);
 }
