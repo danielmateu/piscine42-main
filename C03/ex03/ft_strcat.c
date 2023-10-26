@@ -6,9 +6,13 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 00:07:06 by user              #+#    #+#             */
-/*   Updated: 2023/10/27 00:12:10 by user             ###   ########.fr       */
+/*   Updated: 2023/10/27 00:17:12 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+        La función strcat concatena dos cadenas de caracteres. La función toma dos argumentos: el primer argumento es la cadena de destino a la que se agregará la segunda cadena, y el segundo argumento es la cadena que se agregará a la primera. La función devuelve un puntero a la cadena de destino. La cadena de destino debe tener suficiente espacio para contener ambas cadenas.
+*/
 
 char    *ft_strcat(char *dest, char *src)
 {
