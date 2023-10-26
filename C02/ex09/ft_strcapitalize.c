@@ -18,11 +18,8 @@
 char	*ft_strcapitalize(char *str)
 {
 	int i;
-	int j;
 
 	i = 0;
-	j = 0;
-
 	while (str[i] != '\0')
 	{
 		if (str[i] >= 'A' && str[i] <= 'Z')
@@ -32,6 +29,10 @@ char	*ft_strcapitalize(char *str)
 
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
+			/* The code `if (i == 0)` checks if the current character `str[i]` is the first character of the
+			string. If it is, then it means that it is the first word of the string, so it should be
+			capitalized. Therefore, the code `str[i] = str[i] - 32;` converts the lowercase letter to
+			uppercase. */
 			if (i == 0)
 			{
 				str[i] = str[i] - 32;
