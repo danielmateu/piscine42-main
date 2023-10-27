@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 10:39:26 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/26 10:39:27 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/10/27 10:52:49 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int ft_str_is_alpha(char *str)
 
 int main(void)
 {
-    char str[] = "Hello w0rld";
+    char str[] = "";
     printf("%d", ft_str_is_alpha(str));
     return (0);
 }
