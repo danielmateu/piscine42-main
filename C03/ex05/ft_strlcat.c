@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 00:21:08 by user              #+#    #+#             */
-/*   Updated: 2023/10/27 00:23:00 by user             ###   ########.fr       */
+/*   Updated: 2023/10/31 12:39:25 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,4 @@ unsigned int ft_strlcat(char *dest, char *src, unsigned int size){
     }
     dest[i] = '\0';
     return (j);
-
 }
