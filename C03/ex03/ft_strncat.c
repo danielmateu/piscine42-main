@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 11:32:21 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/31 14:04:08 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/10/31 14:29:35 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,22 @@ char    *ft_strncat(char *dest, char *src, unsigned int nb)
     }
     dest[i] = '\0';
     return (dest);
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+    char dest1[100] = "aaaa";
+    char src1[100] = "xyz";
+    ft_strncat(dest1, src1, 2);
+    printf("Resultado de ft_strncat: %s\n", dest1);
+
+    char dest2[100] = "aaaa";
+    char src2[100] = "xyz";
+    strncat(dest2, src2, 3);
+    printf("Resultado de strncat: %s\n", dest2);
+
+    return 0;
 }

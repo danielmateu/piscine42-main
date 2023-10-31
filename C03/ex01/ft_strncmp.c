@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 23:46:13 by user              #+#    #+#             */
-/*   Updated: 2023/10/27 10:43:23 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/10/31 14:40:02 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
         Reproduce el comportamiento de la función strncmp (man strncmp)
 
         La función strncmp compara los primeros n caracteres de las cadenas s1 y s2.
-        Devuelve un entero menor que, igual a, o mayor que cero si s1 es, respectivamente,
-        menor que, igual a, o mayor que s2.
+        Devuelve un entero menor que, igual a, o mayor que cero si s1 es, respectivamente, menor que, igual a, o mayor que s2.
         La comparación se realiza utilizando caracteres sin signo, por lo que '\200' es mayor que '\0'.
 */
 
@@ -39,4 +38,16 @@ int     ft_strncmp(char *s1, char *s2, unsigned int n)
         if (j == n)
                 return (0);
         return (s1[i] - s2[j]);
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+        char s1[] = "Hola";
+        char s2[] = "Hola";
+        printf("Resultado de ft_strncmp: %d\n", ft_strncmp(s1, s2, 1));
+        printf("Resultado de strncmp: %d\n", strncmp(s1, s2, 3));
+        return 0;
 }
