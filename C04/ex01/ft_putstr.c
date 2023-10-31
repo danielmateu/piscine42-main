@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 00:20:46 by user              #+#    #+#             */
-/*   Updated: 2023/10/31 16:03:41 by damateu-         ###   ########.fr       */
+/*   Created: 2023/10/31 16:26:34 by damateu-          #+#    #+#             */
+/*   Updated: 2023/10/31 16:29:36 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+    Escribe una función que muestre uno a uno en la pantalla los caracteres de una
+cadena de caracteres.
+
+La dirección del primer carácter de la cadena de caracteres está incluida en el
+puntero usado como parámetro a la función.
+*/
+
 #include <unistd.h>
 
-void	ft_is_negative(int n)
+void    ft_putstr(char *str)
 {
-    char	negative;
-    char	positive;
+    int i;
 
-    negative = 'N';
-    positive = 'P';
-    if (n < 0)
-    {
-        write(1, &negative, 1);
-    }
-    else
-    {
-        write(1, &positive, 1);
-    }
-    
+    i = 0;
+    while (str[i])
+        i++;
+    write(1, str, i);
 }
-
-// int	main(void)
-// {
-//     ft_is_negative(-10);
-//     return (0);
-// }
-// int	main(void)
-// {
-//     ft_is_negative(-10);
-//     return (0);
-// }
