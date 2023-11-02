@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 12:20:01 by damateu-          #+#    #+#             */
-/*   Updated: 2023/11/02 14:13:04 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/02 15:00:35 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,4 +100,20 @@ void ft_putnbr_base(int nbr, char *base)
         ft_putchar(base[nb % size]);
     }
 }
+
+/*
+    Main
+
+    
+*/
+
+int main(void)
+{
+    ft_putnbr_base(42, "0123456789");
+    ft_putchar('\n');
+    ft_putnbr_base(42, "0123456789ABCDEF");
+    
+    
+}
+
 

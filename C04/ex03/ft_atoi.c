@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 11:21:45 by damateu-          #+#    #+#             */
-/*   Updated: 2023/11/02 12:07:27 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/02 15:26:55 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,23 +42,21 @@ int ft_atoi(char *str)
         i++;
     while (str[i] == '+' || str[i] == '-')
     {
-        /* This code block is checking if the current character `str[i]` is a minus sign (`'-'`). If it
-        is, it multiplies the `sign` variable by -1 to change the sign of the result. After that, it
-        increments the value of `i` to move to the next character in the string. */
+        /* Este bloque de código está comprobando si el carácter actual str[i] es un signo menos ('-'). Si lo es, multiplica la variable sign por -1 para cambiar el signo del resultado. Después de eso, incrementa el valor de i para pasar al siguiente carácter en la cadena. */
         if (str[i] == '-')
             sign *= -1;
         i++;
     }
     while (str[i] >= '0' && str[i] <= '9')
     {
-        /* The line `res = res * 10 + (str[i] - '0');` is converting the character `str[i]` to its
-        corresponding integer value and adding it to the result. */
+        /* 
+            Convertimos el carácter str[i] a su valor entero correspondiente y añadiéndolo al resultado.
+         */
         res = res * 10 + (str[i] - '0');
         i++;
     }
-    /* The line `return (res * sign);` is returning the final result of the `ft_atoi` function. It
-    multiplies the result `res` by the sign `sign` to account for any minus signs encountered in the
-    string. If the number of minus signs is odd, the sign will be negative, and if the number of
-    minus signs is even, the sign will be positive. */
+    /* 
+        La línea return (res * sign); está devolviendo el resultado final de la función ft_atoi. Multiplica el resultado res por el signo sign para tener en cuenta cualquier signo menos encontrado en la cadena. Si el número de signos menos es impar, el signo será negativo, y si el número de signos menos es par, el signo será positivo.
+     */
     return (res * sign);
 }
