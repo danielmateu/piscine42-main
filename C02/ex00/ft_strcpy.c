@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:48:35 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/25 16:05:28 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/02 13:29:29 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,17 +36,16 @@ char    *ft_strcpy(char *dest, char *src)
     return (dest);
 }
 
-/*
+
     #include <stdio.h>
     #include <string.h>
 
     int main(void)
     {
         char src[] = "Hello World!";
-        char dest[20];
+        char dest[1];
 
         ft_strcpy(dest, src);
         printf("%s\n", dest);
         return (0);
     }
-*/
