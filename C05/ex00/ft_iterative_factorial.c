@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 17:28:24 by damateu-          #+#    #+#             */
-/*   Updated: 2023/11/02 17:30:19 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/03 09:37:50 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,10 @@ int ft_iterative_factorial(int nb)
 
     i = 1;
     res = 1;
+    /* comprobando si el número de entrada nb es menor que 0 o mayor que 12. Si alguna de estas condiciones es verdadera, significa que el factorial de nb no puede ser calculado con precisión porque resultaría en un desbordamiento o subdesbordamiento. En tales casos, la función devuelve 0 para indicar un error. */
     if (nb < 0 || nb > 12)
         return (0);
+    /* El código while (i <= nb) es un bucle que itera desde i hasta nb. Dentro del bucle, multiplica el valor actual de res por i e incrementa i en 1. Esto se hace nb veces, calculando efectivamente el factorial de nb.*/
     while (i <= nb)
     {
         res *= i;
@@ -39,6 +41,6 @@ int ft_iterative_factorial(int nb)
 
 int main(void)
 {
-    printf("%d\n", ft_iterative_factorial(5));
+    printf("%d\n", ft_iterative_factorial(3));
     return (0);
 }
