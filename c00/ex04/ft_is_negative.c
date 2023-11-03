@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 00:20:46 by user              #+#    #+#             */
-/*   Updated: 2023/10/31 16:03:41 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/03 14:06:19 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,9 @@ void	ft_is_negative(int n)
     
 }
 
-// int	main(void)
-// {
-//     ft_is_negative(-10);
-//     return (0);
-// }
-// int	main(void)
-// {
-//     ft_is_negative(-10);
-//     return (0);
-// }
+int	main()
+{
+    ft_is_negative(-10);
+    return (0);
+}
+

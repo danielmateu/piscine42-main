@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 13:21:59 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/24 13:33:47 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/03 14:11:56 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,5 @@ void ft_div_mod(int a, int b, int *div, int *mod)
 
     return;
 }
+
+

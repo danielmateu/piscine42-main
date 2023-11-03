@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 22:31:55 by user              #+#    #+#             */
-/*   Updated: 2023/10/23 16:12:27 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/03 14:07:48 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ void	ft_print_comb(void)
 	}
 }
 
-// int	main(void)
-// {
-//         ft_print_comb();
-//         return (0);
-// }
+int	main(void)
+{
+        ft_print_comb();
+        return (0);
+}

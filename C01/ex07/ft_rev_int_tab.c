@@ -6,14 +6,15 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 15:46:34 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/24 16:14:50 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/03 14:30:29 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
     Escribe una funcion que invierta un array de int.
 
-    Los parametros son un puntero a int y el numero de in en el array
+    El array tiene que ser modificado directamente, sin devolver nada.
+    Los parametros son un puntero al primer elemento del array y el numero de elementos del array.
 */
 
 void ft_rev_int_tab(int *tab, int size)
@@ -22,22 +23,40 @@ void ft_rev_int_tab(int *tab, int size)
     int temp;
 
     i = 0;
-    /* The `while (i < size / 2)` loop is used to iterate through the first half of the array. It stops
-    when `i` reaches the middle index of the array. This is done because we only need to swap
-    elements up to the middle index in order to reverse the array. */
+    /* 
+    El bucle while (i < size / 2) se utiliza para iterar a través de la primera mitad del array. Se detiene cuando i alcanza el índice medio del array. Esto se hace porque solo necesitamos intercambiar elementos hasta el índice medio para invertir el array.
+     */
     while (i < size / 2)
     {
-        /* `temp = tab[i];` is assigning the value of `tab[i]` to the variable `temp`. This is done in
-        order to temporarily store the value of `tab[i]` before it is overwritten in the next line
-        of code. */
+        /* 
+        temp = tab[i]; está asignando el valor de tab[i] a la variable temp. Esto se hace para almacenar temporalmente el valor de tab[i] antes de que se sobrescriba en la siguiente línea de código.
+         */
         temp = tab[i];
-        /* `tab[i] = tab[size - i - 1];` is swapping the value at index `i` with the value at the
-        corresponding index from the end of the array. */
+        /* 
+        Intercambiamos el valor en el índice i con el valor en el índice correspondiente desde el final del array.
+        */
         tab[i] = tab[size - i - 1];
-        /* `tab[size - i - 1] = temp;` is swapping the value at index `size - i - 1` with the value
-        stored in the variable `temp`. This line of code is used to reverse the array by swapping
-        elements from the end of the array with elements from the beginning of the array. */
+        /* 
+        Intercambiamos el valor en el índice size - i - 1 con el valor almacenado en la variable temp. Esta línea de código se utiliza para invertir el array intercambiando elementos desde el final del array con elementos desde el principio del array.
+         */
         tab[size - i - 1] = temp;
         i++;
     }
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+    int tab[5] = {1, 2, 3, 4, 5};
+    int size = 5;
+    int i = 0;
+
+    ft_rev_int_tab(tab, size);
+    while (i < size)
+    {
+        printf("%d", tab[i]);
+        i++;
+    }
+    return (0);
 }

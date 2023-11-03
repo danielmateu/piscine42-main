@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 15:08:34 by damateu-          #+#    #+#             */
-/*   Updated: 2023/10/24 15:13:01 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/03 14:14:59 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,15 @@ int ft_strlen(char *str)
     while (str[i])
         i++;
     return (i);
+}
+
+int main(void)
+{
+    char *str;
+
+    str = "Adios mundo";
+    ft_strlen(str);
+    return (0);
 }
 
 
