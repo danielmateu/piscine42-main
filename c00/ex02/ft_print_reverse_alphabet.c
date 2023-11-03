@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/19 18:30:06 by user              #+#    #+#             */
-/*   Updated: 2023/10/23 16:13:07 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:57:52 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,25 +18,18 @@
 void    ft_print_reverse_alphabet(void)
 {
         char    c;
-        int             i;
-
         c = 'z';
-        i = 0;
-        while (i < 26)
+
+        while (c >= 'a')
         {
                 write(1, &c, 1);
                 c--;
-                i++;
         }
 }
 
-// int main(void)
-// {
-//     ft_print_reverse_alphabet();
-//     return (0);
-// }
-// int main(void)
-// {
-//     ft_print_reverse_alphabet();
-//     return (0);
-// }
+int main(void)
+{
+        ft_print_reverse_alphabet();
+        return (0);
+}
+
