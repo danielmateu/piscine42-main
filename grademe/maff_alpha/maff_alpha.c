@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:56:02 by damateu-          #+#    #+#             */
-/*   Updated: 2023/11/09 12:06:04 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/09 13:51:10 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,33 @@ odd letters in lowercase, followed by a newline.
 
 #include <unistd.h>
 
-int main(void)
-{
-    char c;
-    char d;
+/*
 
-    c = 'a';
-    d = 'B';
-    while (c <= 'z' && d <= 'Z')
-    {
-        write(1, &c, 1);
-        write(1, &d, 1);
-        c += 2;
-        d += 2;
+Hard way
+
+int main(void) {
+    char c = 'a';
+    int i = 1;
+    char output;
+
+    while (c <= 'z') {
+        if (i % 2 == 0) {
+            output = c - 32;
+        } else {
+            output = c;
+        }
+        write(1, &output, 1);
+        c++;
+        i++;
     }
-    write(1, "\n", 1);
-    return (0);
+
+    return 0;
+}
+*/
+
+/* Easy way*/
+
+int main(void) {
+    write(1, "aBcDeFgHiJkLmNoPqRsTuVwXyZ\n", 27);
+    return 0;
 }
