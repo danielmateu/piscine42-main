@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:03:00 by damateu-          #+#    #+#             */
-/*   Updated: 2023/11/09 15:15:26 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/09 15:22:36 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,15 @@ Si el número es múltiplo de 3 y múltiplo de 5, el programa debe escribir 'fiz
 #include <unistd.h>
 
 void ft_write_numbers(int n){
+    if(n == 0){
+        write(1, "0", 1);
+        return;
+    }
+    else if(n < 0){
+        write(1, "-", 1);
+        n = -n;
+    }
+
     if(n > 9){
         ft_write_numbers(n / 10);
     }
