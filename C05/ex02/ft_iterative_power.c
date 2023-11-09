@@ -6,14 +6,14 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 10:47:25 by damateu-          #+#    #+#             */
-/*   Updated: 2023/11/03 10:58:31 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/09 12:14:40 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
     Escribe una funcion iterativa que devuelva una potencia de un numero
 
-    Una pontencia inferior a 0 devuelve 0
+    Una potencia inferior a 0 devuelve 0
 
     Se ha decidido que 0 elevado a 0 es 1
 */
