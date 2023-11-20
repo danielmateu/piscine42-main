@@ -13,22 +13,21 @@
 // Escribe una funcion que reciba como parámetro un puntero a int, y ponga el valor de este int a 42.
 
 #include <unistd.h>
+#include <stdio.h>
 
-void ft_ft(int *nbr) {
+void ft_ft(int *nbr)
+{
     *nbr = 42;
+    printf("%d", *nbr);
 }
 
-int main(void) {
+int main(void)
+{
     int a;
-    int *ptr;
+    int *nbr;
 
     a = 0;
-    ptr = &a;
-    //Imprime el valor de a, que es 42
-    ft_ft(ptr);
-    write(1, &a, 1);
-    
+    nbr = &a;
+    ft_ft(nbr);
     return (0);
 }
-
-
