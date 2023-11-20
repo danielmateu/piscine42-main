@@ -12,61 +12,45 @@
 
 #include <unistd.h>
 
-void	write_result(char a, char b, char c, char d)
+void p2d_int(int n)
 {
-	write(1, &a, 1);
-	write(1, &b, 1);
-	write(1, " ", 1);
-	write(1, &c, 1);
-	write(1, &d, 1);
-	if (!(a == '9' && b == '8' && c == '9' && d == '9'))
-		write(1, ", ", 2);
-}
+	int div;
+	int mod;
 
-void	last_condition(char a, char b, char c, char d)
-{
-	if (a < c || (a == c && b < d))
-		write_result(a, b, c, d);
-}
-
-void	while_conditions(char a, char b, char c, char d)
-{
-	a = '0' - 1;
-	while (++a <= '9')
-	{
-		b = '0' - 1;
-		while (++b <= '9')
-		{
-			c = '0' - 1;
-			while (++c <= '9')
-			{
-				d = '0' - 1;
-				while (++d <= '9')
-				{
-					last_condition(a, b, c, d);
-				}
-			}
-		}
-	}
+	mod = n % 10 + 48;
+	div = n / 10 + 48;
+	write(1, &div, 1);
+	write(1, &mod, 1);
 }
 
 /**
  * The function ft_print_comb2 prints all possible combinations of two digits.
  */
-void	ft_print_comb2(void)
+void ft_print_comb2(void)
 {
-	char	a;
-	char	b;
-	char	c;
-	char	d;
+	int a;
+	int b;
 
-	while_conditions(a, b, c, d);
+	b = 0;
+	while (b <= 99)
+	{
+		a = b + 1;
+		while (a <= 99)
+		{
+			p2d_int(b);
+			write(1, " ", 1);
+			p2d_int(a);
+			if (!(b == 98 && a == 99))
+				write(1, ", ", 2);
+			a++;
+		}
+		b++;
+	}
 }
 
-// int	main(void)
+int main(void)
 
-// {
-//     ft_print_comb2();
-//     return (0);
-
-// }
+{
+	ft_print_comb2();
+	return (0);
+}

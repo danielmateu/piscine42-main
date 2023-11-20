@@ -15,10 +15,9 @@
 // Escribe una función que muestre el alfabeto en minúsculas en una sola línea, en
 // orden creciente, empezando en la letra “a”.
 
-void    ft_print_alphabet(void)
+void ft_print_alphabet(void)
 {
-        char    c;
- 
+        char c;
 
         c = 'a';
 
@@ -29,9 +28,8 @@ void    ft_print_alphabet(void)
         }
 }
 
-
 int main(void)
 {
-    ft_print_alphabet();
-    return (0);
+        ft_print_alphabet();
+        return (0);
 }
