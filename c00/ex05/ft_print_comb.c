@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 22:31:55 by user              #+#    #+#             */
-/*   Updated: 2023/11/03 14:07:48 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/12/11 14:29:12 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	ft_print_comb(void)
 	char	b;
 	char	c;
 
-	a = '0' - 1;
-	while (++a <= '9')
+	a = '0';
+	while (a <= '9')
 	{
 		b = a;
 		while (++b <= '9')
@@ -34,6 +34,7 @@ void	ft_print_comb(void)
 					write(1, ", ", 2);
 			}
 		}
+		a++;
 	}
 }
 
