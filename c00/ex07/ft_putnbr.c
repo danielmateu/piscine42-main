@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 14:42:55 by user              #+#    #+#             */
-/*   Updated: 2023/12/11 14:48:26 by user             ###   ########.fr       */
+/*   Updated: 2023/12/11 14:55:47 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ void ft_putnbr(int nb)
 {
     int div;
     int mod;
+    int c = 48;
 
     if (nb < 0)
     {
@@ -28,13 +29,13 @@ void ft_putnbr(int nb)
     }
     if (nb < 10)
     {
-        mod = nb + 48;
+        mod = nb + c;
         write(1, &mod, 1);
     }
     else
     {
         div = nb / 10;
-        mod = nb % 10 + 48;
+        mod = nb % 10 + c;
         ft_putnbr(div);
         write(1, &mod, 1);
     }
