@@ -6,7 +6,7 @@
 /*   By: user <user@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 11:46:42 by user              #+#    #+#             */
-/*   Updated: 2023/12/12 11:54:27 by user             ###   ########.fr       */
+/*   Updated: 2023/12/12 16:20:40 by user             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,10 @@
 
 // construcción de una funcion main qe devuelva un entero:
 
-int main(n)
+#include <stdio.h> // archivo de cabecera que contiene la funcion printf
+
+int main()
 {
+    printf("Hola mundo");
     return (0);
 }
