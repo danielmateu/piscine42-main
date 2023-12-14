@@ -14,6 +14,18 @@
 
 #include <stdio.h>
 
+float media(int edades[], int tam)
+{
+    int i;
+    float acum = 0;
+    for (i = 0; i < tam; i++)
+    {
+        acum += edades[i];
+    }
+    float media = acum / tam;
+    return media;
+}
+
 int main()
 {
     // int edades[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // Array de 10 elementos
@@ -30,6 +42,8 @@ int main()
     {
         printf("La edad de la persona %d es %d\n", i + 1, edades[i]);
     }
+
+    printf("La media de las edades es: %.2f\n", media(edades, tam));
 
     return 0;
 }
