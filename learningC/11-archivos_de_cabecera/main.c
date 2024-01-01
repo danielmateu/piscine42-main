@@ -3,6 +3,7 @@
 #include <string.h>
 
 #include "empleados.h"
+#include "sueldo.h"
 
 int main()
 {
@@ -12,5 +13,6 @@ int main()
     strncpy(e.id, "66656", 9);
     // e.cargo = PROGRAMADOR;
     print_empleado(&e);
+    pagar_sueldo(&e);
     return 0;
 }

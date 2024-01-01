@@ -1,4 +1,5 @@
-
+#ifndef EMPLEADOS
+#define EMPLEADOS
 
 typedef enum cargo_t
 {
@@ -16,3 +17,5 @@ typedef struct empleado_t
 } Empleado;
 
 void print_empleado(Empleado *empl);
+
+#endif // EMPLEADOS
