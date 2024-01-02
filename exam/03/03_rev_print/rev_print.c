@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:30:49 by damateu-          #+#    #+#             */
-/*   Updated: 2023/11/09 15:37:36 by damateu-         ###   ########.fr       */
+/*   Updated: 2023/11/09 15:54:26 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ Escribe una función que tome una cadena y muestre la cadena en orden inverso se
 
 #include <unistd.h>
 #include <stdio.h>
+
 int	ft_strlen(char *str)
 {
 	int	i;
