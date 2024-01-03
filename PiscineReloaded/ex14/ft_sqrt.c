@@ -25,6 +25,6 @@ int ft_sqrt(int nb)
 
 int main (void)
 {
-    printf("%d\n", ft_sqrt(100));
+    printf("%d\n", ft_sqrt(15625));
     return (0);
 }

@@ -8,7 +8,14 @@
     void ft_putstr(char *str);
 */
 
-// #include <unistd.h>
+#include <unistd.h>
+
+//void ft_putchar(char c);
+
+/* void ft_putchar(char c)
+{
+    write(1, &c, 1);
+} */
 
 void ft_putchar(char c);
 
@@ -24,7 +31,6 @@ void ft_putstr(char *str)
     }
 }
 
-/*
 #include <stdio.h>
 
 int main(void)
@@ -34,4 +40,3 @@ int main(void)
     ft_putstr(str);
     return (0);
 }
-*/
