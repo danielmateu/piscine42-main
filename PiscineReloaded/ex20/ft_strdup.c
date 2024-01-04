@@ -6,7 +6,7 @@
 /*   By: damateu- <damateu-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 17:30:49 by damateu-          #+#    #+#             */
-/*   Updated: 2024/01/04 13:40:58 by damateu-         ###   ########.fr       */
+/*   Updated: 2024/01/04 13:57:10 by damateu-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,5 +56,19 @@ int main(void)
     return (0);
 }
 
+
+/* 
+Comportamiento de la funcion strdup
+
+La función strdup se utiliza comúnmente en escenarios donde necesitas crear una copia modificable de una cadena. Aquí están algunos casos de uso comunes:
+
+1 -> Manipulación de Cadenas: Cuando tienes una cadena constante y quieres realizar operaciones que modifiquen la cadena, como insertar o eliminar caracteres, puedes usar strdup para crear una copia modificable de la cadena.
+
+2 -> Gestión de Memoria: Si estás trabajando con cadenas en un contexto donde la memoria necesita ser asignada y desasignada dinámicamente, strdup puede ser útil. Asigna la cantidad exacta de memoria necesaria para la copia de la cadena.
+
+3 -> Protección de Datos: Si tienes una cadena que quieres pasar a una función pero no quieres que la función pueda cambiar la cadena original, puedes pasar una copia de strdup de la cadena a la función.
+
+4 -> Multihilo: En aplicaciones multihilo, strdup puede ser utilizado para asegurar que cada hilo tenga su propia copia de una cadena, previniendo carreras de datos.
+*/
 
 
