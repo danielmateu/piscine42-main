@@ -28,9 +28,9 @@ float media(int edades[], int tam)
 
 int main()
 {
-    // int edades[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // Array de 10 elementos
+    //int edades[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // Array de 10 elementos
     int tam;
-    printf("Introduce el tamaño del array: ");
+    printf("Cuantas edades vas a introducir: ");
     scanf("%d", &tam);
     int i, edades[tam];
     for (i = 0; i < tam; i++)
