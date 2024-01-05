@@ -22,7 +22,7 @@ int main()
 {
     int x;
     x = 10;
-    // Obterner la direccion de memoria de la variable x
+    // Obtener la direccion de memoria de la variable x
     &x;
     // Para guardar la direccion de memoria de una variable se usa el operador *
     int *dirX = &x;
