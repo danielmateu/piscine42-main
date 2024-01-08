@@ -10,7 +10,7 @@ void print_empleado(Empleado *empl)
     printf("Nombre: %s\n", empl->nombre);
     printf("Apellido: %s\n", empl->apellido);
     printf("ID: %s\n", empl->id);
-    printf("Cargo: %d\n", empl->cargo);
+    // printf("Cargo: %d\n", empl->cargo);
 
     switch (empl->cargo)
     {

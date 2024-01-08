@@ -23,6 +23,6 @@ int main()
     // int dia = 1; // Lunes
     enum diasemana dia;
     dia = MARTES;
-    printf("Dia %d", dia);
+    printf("Dia %d\n", dia);
     return 0;
 }

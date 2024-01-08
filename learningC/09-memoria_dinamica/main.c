@@ -19,7 +19,7 @@
 
 int main()
 {
-    printf("Cuantos elementos quieres reservar¿?");
+    printf("Cuantos elementos quieres reservar?");
     int longitud;
     scanf("%d", &longitud);
 
@@ -34,7 +34,11 @@ int main()
     {
         valores[i] = 5.55E5;
     }
-    printf("Todo está correcto\n");
+    printf("Todo correcto\n");
     free(valores);
     return 0;
 }
+
+// Cada vez que usemos la función malloc, debemos incluir la cabecera stdlib.h. y liberar la memoria reservada con la función free. La función free recibe como parámetro un puntero al inicio del bloque de memoria que queremos liberar. Si no liberamos la memoria reservada, se producirá una fuga de memoria. 
+
+//Una fuga de memoria ocurre cuando reservamos memoria dinámica y no la liberamos, por lo que el programa va consumiendo memoria hasta que se queda sin memoria disponible.

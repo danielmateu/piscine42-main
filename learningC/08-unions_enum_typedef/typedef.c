@@ -16,3 +16,5 @@ int main()
     printf("Numero: %d", numero);
     return 0;
 }
+
+// Utilizando typedef estamos ensuciando el código, ya que estamos creando un alias para un tipo de dato que ya existe. Sin embargo, en algunos casos puede ser útil, por ejemplo, si queremos crear un alias para un tipo de dato que es muy largo, o si queremos crear un alias para un tipo de dato que es muy complejo, como un puntero a una función. 
