@@ -1,7 +1,6 @@
 #include "empleados.h"
 #include <stdio.h>
-
-
+#include <string.h>
 
 void pagar_sueldo(Empleado* e)
 {
