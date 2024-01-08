@@ -23,14 +23,12 @@
 
 // Para acceder a los campos de una estructura se utiliza el operador punto (.)
 
-// Cuando tengamos que pasar una estructura como parámetro a una función, lo haremos por valor, es decir, pasaremos una copia de la estructura.
-
-mprimir_datos(struct persona p)
+// Cuando tengamos que pasar una estructura como parámetro a una función, lo haremos por valor, es decir, pasaremos una copia de la estructura.imprimir_datos(struct persona p)
 
 #include <stdio.h>
 #include <string.h>
 
-    struct cuenta
+struct cuenta
 {
     char nombre[30];
     char apellido[40];
@@ -41,7 +39,7 @@ mprimir_datos(struct persona p)
 void imprimir_datos(struct cuenta *c)
 {
     printf("%s %s, con DNI: %d tiene %d€ en su cuenta",
-           c->nombre, c->apellido, c->id, c->saldo);
+        c->nombre, c->apellido, c->id, c->saldo);
 }
 
 int main()
